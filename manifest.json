@@ -1,0 +1,27 @@
+ {
+    "name": "Meu primeiro Pulo",
+    "short_name": "Meu Pulo",
+    "description": "Aplicativo feito durante a aula de TDS",
+    "start_url": "https://luiz-m-ribeiro.github.io/Projeto-jogo-mobile/",
+    "background_color": "#ddd",
+    "theme_color": "#ddd",
+    "scope": "https://luiz-m-ribeiro.github.io/Projeto-jogo-mobile/",
+    "display": "standalone",
+
+    "icons": [
+        {
+            "src": "img/logo.png",
+            "sizes": "50x50"
+        }
+    ],
+
+    "lang": "pt-br",
+    "dir": "auto",
+
+    "categories": [
+        "game"
+    ],
+
+    "id": "pulo_teste",
+    "orientation": "any"
+ }
