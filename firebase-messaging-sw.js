@@ -1,5 +1,6 @@
-importScripts('https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/12.2.1/firebase-messaging.js');
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+import { getMessaging } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-messaging.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCZHMr_G5wujOEJ8xdyHVgQXDc6dKZjaYs",
@@ -10,6 +11,10 @@ const firebaseConfig = {
   appId: "1:951266645907:web:22602c723ba3277dedba66",
   measurementId: "G-1R0YSLKRW9"
 };
+
+    const app = initializeApp(firebaseConfig);
+    const messaging = firebaseConfig.messaging();
+
 
     messaging.onBackgroundMessage((ms) => {
         console.log("[firebase-messaging-sw.js] Menssagem recebida", ms);
