@@ -16,7 +16,7 @@ const firebaseConfig = {
     const messaging = getMessaging(app);
 
 
-    messaging.onBackgroundMessage((ms) => {
+    onBackgroundMessage(messaging, (ms) => {
         console.log("[firebase-messaging-sw.js] Menssagem recebida", ms);
 
         const notificacaoTitulo = ms.notification.title;
